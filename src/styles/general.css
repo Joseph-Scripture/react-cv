@@ -1,0 +1,74 @@
+body {
+    /* background-color: #f4f7f9; */
+    /* background-color: red; */
+    color: #333;
+    /* padding: 5em; */
+   
+    
+}
+
+/* Main Form Container */
+.container {
+    margin: 8px 12px;
+    background-color: #ffffff;
+    padding: 2em 3em;
+    border-radius: 16px; 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); 
+    width: 100%;
+    max-width: 800px; 
+    border: 1px solid #eef2f5;
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em 3.5em; 
+}
+
+/* Form Group for each label-input pair */
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5em;
+}
+
+/* Styling for Labels */
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Styling for Inputs */
+input {
+    width: 100%; 
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid #dbe1e6;
+    border-radius: 8px; 
+    outline: none;
+    background-color: #f9fafb;
+    color: #333;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; 
+}
+
+/* Style for when an input is focused (clicked on) */
+input:focus {
+    border-color: #3b82f6; 
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); 
+}
+
+.full-width {
+    grid-column: 1 / -1; 
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 1em; /* Reduce padding on smaller screens */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Stack everything into a single column */
+        padding: 1.5em;
+    }
+}
