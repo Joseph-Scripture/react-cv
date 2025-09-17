@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Main Two-Column Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button{
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.11rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: all 1s ease;
+}
+button:hover{
+    background-color: rgba(0, 153, 255, 0.5);
+}
+.input-section {
+    flex: 1; 
+    min-width: 350px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Right side: CV Preview */
+.display-area {
+    flex: 1.5; 
+    min-width: 400px;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 80vh; 
+}
+
+.info,
+.education {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* General Form Element Styling */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Styling for the CV preview sections */
+.preview-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.preview-section:last-child {
+    border-bottom: none;
+}
